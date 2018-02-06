@@ -34,7 +34,7 @@ if($response){
 		echo '</tr>';
 	}
 	
-	echo '</table'>;
+	echo '</table>';
 }else {
 	echo "Couldn't issue database query";
 	echo mysqli_error($dbc);
