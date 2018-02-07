@@ -36,7 +36,7 @@ if($response){
 	
 	echo '</table>';
 }else {
-	echo "Couldn't issue database query";
+	echo "Couldn't issue the database query";
 	echo mysqli_error($dbc);
 }
 
