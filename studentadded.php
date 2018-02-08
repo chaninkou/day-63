@@ -132,7 +132,7 @@
 			street, city, state, zip, phone, birth_date, sex, date_entered,
 			lunch_cost, student_id) VALUES (?, ?, ?,
 			?, ?, ?, ?, ?, ?, ?, NOW(), ?, NULL)";
-			
+
 			$stmt = mysqli_prepare($dbc, $query);
 			
 			// i Integers, d Doubles, b Blobs, s everything else
@@ -179,7 +179,7 @@
 }
 
 ?>
-	<form action = "http://localhost/studentadded.php" method="post">
+	<form action = "http://localhost/mysqlWithPhp/Documents/studentadded.php" method="post">
 		<b>Enter your information</b>
 		
 		<p>First Name:

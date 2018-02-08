@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<form action = "http://localhost/studentadded.php" method="post">
+	<form action = "http://localhost/mysqlWithPhp/Documents/studentadded.php" method="post">
 		<b>Enter your information</b>
 		
 		<p>First Name:

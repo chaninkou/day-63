@@ -1,7 +1,9 @@
 <?php
 require_once('../mysqli_connect.php');
 
-$query = "SELECT first_name, last_name, email, street, city, state, zip, phone, birth_date, FROM students";
+$query = "SELECT first_name, last_name, email, street, city, state, zip,
+phone, birth_date FROM students";
+
 
 $response = @mysqli_query($dbc, $query);
 
@@ -19,7 +21,7 @@ if($response){
 	<td align = "left"><b>Phone</b></td>
 	<td align = "left"><b>Birth Day</b></td>';
 	
-	while($row = mysql_fetch_array($response)){
+	while($row = mysqli_fetch_array($response)){
 		echo '<tr><td align = left">' .
 		$row['first_name'] . '</td><td align = "left">' .
 		$row['last_name'] . '</td><td align = "left">' .
