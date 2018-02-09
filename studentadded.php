@@ -5,7 +5,7 @@
 <body>
 <?php
 
-	if(isset($_POST['sumbit'])){
+	if(isset($_POST['submit'])){
 		
 		$data_missing = array();
 		// Getting the first_name from addstudent.php
