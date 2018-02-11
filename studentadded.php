@@ -135,11 +135,13 @@
 
 			$stmt = mysqli_prepare($dbc, $query);
 			
+			
 			// i Integers, d Doubles, b Blobs, s everything else
 			mysqli_stmt_bind_param($stmt, "ssssssisssd", $f_name,
             $l_name, $email, $street, $city,
             $state, $zip, $phone, $b_date,
             $sex, $lunch);
+			
 			
 			mysqli_stmt_execute($stmt);
         
@@ -157,7 +159,7 @@
 			} else {
             
 				echo 'Error Occurred<br />';
-				echo mysqli_error();
+				echo mysqli_error($dbc);
 				
 				mysqli_stmt_close($stmt);
 				

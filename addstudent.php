@@ -51,7 +51,7 @@
 		<p>Lunch Money:
 			<input type="text" name="lunch" size="5" value="" />
 		</p>
-
+		
 		<p>
 			<input type="submit" name="submit" value="Send" />
 		</p>

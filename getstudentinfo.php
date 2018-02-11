@@ -21,6 +21,8 @@ if($response){
 	<td align = "left"><b>Phone</b></td>
 	<td align = "left"><b>Birth Day</b></td>';
 	
+	
+	
 	while($row = mysqli_fetch_array($response)){
 		echo '<tr><td align = left">' .
 		$row['first_name'] . '</td><td align = "left">' .
