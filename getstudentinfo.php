@@ -2,7 +2,7 @@
 require_once('../mysqli_connect.php');
 
 $query = "SELECT first_name, last_name, email, street, city, state, zip,
-phone, birth_date FROM students";
+phone, birth_date, sex, lunch_cost, date_entered FROM students";
 
 
 $response = @mysqli_query($dbc, $query);
@@ -19,7 +19,10 @@ if($response){
 	<td align = "left"><b>State</b></td>
 	<td align = "left"><b>Zip</b></td>
 	<td align = "left"><b>Phone</b></td>
-	<td align = "left"><b>Birth Day</b></td>';
+	<td align = "left"><b>Birth Day</b></td>
+	<td align = "left"><b>Sex</b></td>
+	<td align = "left"><b>Lunch Money</b></td>
+	<td align = "left"><b>Date Entered</b></td>';
 	
 	
 	
@@ -33,7 +36,10 @@ if($response){
 		$row['state'] . '</td><td align = "left">' .
 		$row['zip'] . '</td><td align = "left">' .
 		$row['phone'] . '</td><td align = "left">' .
-		$row['birth_date'] . '</td><td align = "left">';
+		$row['birth_date'] . '</td><td align = "left">' .
+		$row['sex'] . '</td><td align = "left">' .
+		$row['lunch_cost'] . '</td><td align = "left">' .
+		$row['date_entered'] . '</td><td align = "left">';
 		
 		echo '</tr>';
 	}
